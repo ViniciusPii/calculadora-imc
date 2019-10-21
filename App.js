@@ -22,10 +22,6 @@ export default class App extends Component<Props> {
     let s = this.state
     s.resultado = imc
 
-    if (s.resultado === 0) {
-      s.resultado = "Olá"
-    }
-
     if (s.resultado < 16) {
       s.resultadoText = "Magreza Grave"
     } else if (s.resultado < 17) {
